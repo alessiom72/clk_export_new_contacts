@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="data_source_export_filename" model="ir.ui.view">
+            <field name="name">data.source.export.filename</field>
+            <field name="model">data.source</field>
+            <field name="inherit_id" ref="clk_update_data.view_data_source_conf_form" />
+            <field name="arch" type="xml">
+                <field name="remote_directory" position="after">
+                    <field name="remote_directory_export" />
+                    <field name="partner_export_filename" />
+                </field>
+            </field>
+        </record>
+
+    </data>
+</odoo>
