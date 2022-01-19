@@ -150,4 +150,4 @@ class Partner(models.Model):
             if not os.path.isdir(backup_directory):
                 os.mkdir(backup_directory)
 
-            shutil.copy(tmp_filename, backup_directory + '/' + backup_filename + '_' + datetime.date.today().strftime('%Y%m%d_%H%M') + '.' + backup_extension)
+            shutil.copy(tmp_filename, backup_directory + '/' + backup_filename + '_' + datetime.datetime.now().strftime('%Y%m%d_%H%M') + backup_extension)
